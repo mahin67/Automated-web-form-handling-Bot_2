@@ -1,0 +1,57 @@
+h5{
+  font-family: Calibri;
+  font-size: 25pt;
+  font-style: normal;
+  font-weight: bold;
+  color:SlateBlue;
+  text-align: center;
+  text-decoration: underline
+
+}
+
+h3{
+  border: 5px solid #9040d6;
+  padding: 70px 70px 0px 70px
+  font-family: Calibri;
+  font-size: 25pt;
+  font-style: normal;
+  font-weight: bold;
+  color:SlateBlue;
+  text-align: left;
+  text-decoration: underline
+
+
+}
+.btn {
+  border: 1px solid #333;
+  color: black;
+  padding: 10px 18px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #6a5acd;} /* Green */
+.success:hover {background-color: #46a049;}
+.ldf{
+  font-family: Calibri;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+  color:SlateBlue;
+  text-align: center;
+
+}
+
+table{
+  font-family: Calibri;
+  color:white;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align:;
+  background-color: SlateBlue;
+  border-collapse: collapse;
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}

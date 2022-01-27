@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Client Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static  'css/load_style.css' %}">
+</head>
+
+<body>
+<h3>Welcome to the Loading Page</h3>
+
+<form  method="POST" enctype="multipart/form-data">
+ {% csrf_token %}
+
+    <label class="ldf">
+        Please attach your file :
+    </label>
+    <input class="ldXLfile" type="file" name="file">
+  <button class="btn success">LOAD</button>
+</form>
+
+
+<h5>CLIENT REGISTRATION FORM</h5>
+
+<table align="center" cellpadding = "10">
+<form method="POST" >
+    {% csrf_token %}
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>NAME</td>
+<td><input type="text" name="Name" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type="text" name="DOB"  /></td>
+</tr>
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>Father's Name</td>
+<td><input type="text" name="Fname"  /></td>
+</tr>
+
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>Mother's Name</td>
+<td>
+<input type="text" name="Mname"  />
+</td>
+</tr>
+
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+</tr>
+
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+</tr>
+
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="City" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="Pin_Code" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+
+
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="Country" value=""  /></td>
+</tr>
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</form>
+
+</table>
+
+
+</body>
+</html>
